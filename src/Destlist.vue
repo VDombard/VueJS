@@ -1,16 +1,18 @@
 <template>
   <div id="destlist"> <h1>Liste des destinations</h1>
   <div v-for="(dest, iddest) in destlist" :key="dest.idcountry">
-          {{dest.country}}
+          {{ dest.country }}
   </div>
   </div>
 </template>
 
 <script>
-    import axios from 'axios';
+    import axios from "axios";
+    //import dest from "./Dest";
 
     export default {
-        name: 'Destlist',
+        name: "Destlist",
+        //components: { Dest },
         data() {
             return {
                 destlist: [],

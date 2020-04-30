@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import Destlist from './Destlist';
+import Destlist from "./Destlist";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {Destlist},
   data () {
     return {
