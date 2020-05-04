@@ -24,7 +24,7 @@
                 axios
                 .get(this.url)
                 .then ( (response) => {
-                    this.destlist = response.data;
+                    this.destlist = response.data.destination;
                     console.log(this.destlist);
                 })
                 .catch( (error) => {
