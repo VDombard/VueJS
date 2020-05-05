@@ -73,10 +73,10 @@
                     console.log(error);
                 })
             },
-            destDelete(id) {
-                axios.delete(this.url + id)
+            destDelete(iddestination) {
+                axios.delete(this.url + iddestination)
                 .then ( (response) => {
-                    console.log(response.data.destination);
+                    console.log(response.data);
                     this.get_destlist();
                 })
                 .catch( (error) => {
