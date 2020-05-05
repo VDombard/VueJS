@@ -6,7 +6,7 @@
             <input type="text" v-model="dest.country">
             <button v-on:click="updateDest(dest)">Sauver</button>
         </div>
-        <button v-on:click="deleteDest(dest.idcountry)">Supprimer</button>
+        <button v-on:click="deleteDest(dest.iddestination)">Supprimer</button>
 
     </div>
 </template>
