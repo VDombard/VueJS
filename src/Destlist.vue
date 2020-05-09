@@ -57,7 +57,7 @@
                 console.log(dest)
                 axios.put(this.url + dest.iddestination, dest)
                 .then( (reponse) => {
-                    console.log(response.date);
+                    console.log(response.data);
                     })
                 .catch( (error) => {
                     console.log(error);

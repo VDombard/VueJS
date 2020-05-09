@@ -1,5 +1,5 @@
 <template>
-    <div id="dest"><h3>{{ dest.country }} </h3> <h4>{{ dest. city }} </h4> <h4>{{ dest.days }}</h4>
+    <div id="dest"><h3>Pays: {{ dest.country }} </h3> <h4> Ville: {{ dest. city }} </h4> <h4>Jours: {{ dest.days }}</h4>
     <button v-on:click="showInput = true" v-if="! showInput">Modifier</button>
    
         <div v-if="showInput">

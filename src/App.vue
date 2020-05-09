@@ -1,15 +1,16 @@
 <template>
   <div id="app"><h1>Gestion des destinations</h1>
-  <Destlist></Destlist>
+  <Destlist></Destlist> <Agencelist></Agencelist>
   </div>
 </template>
 
 <script>
 import Destlist from "./Destlist";
+import Agencelist from "./Agencelist";
 
 export default {
   name: "app",
-  components: {Destlist},
+  components: {Destlist, Agencelist},
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
