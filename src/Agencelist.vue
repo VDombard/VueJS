@@ -3,7 +3,7 @@
 
         <button v-on:click="showCreate = ! showCreate">Ajouter une agence</button>
         <div v-if="showCreate">
-            <input type="text" v-model="agence.nomagence">
+            <input type="text" v-model="agence.nomagence" placeholder="Nom de l'agence">
             <button v-on:click="agenceAdd">Sauver</button>
         </div>
 
@@ -24,7 +24,7 @@
             return {
                 agence: {
                     idagence: 0,
-                    nomagence: "nom agence"
+                    nomagence: ""
                 },
                 agencelist: [],
                 url:"http://localhost:8000/api/agence/",

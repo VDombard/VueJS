@@ -3,11 +3,11 @@
 
         <button v-on:click="showCreate = ! showCreate">Create destination</button>
         <div v-if="showCreate">
-            <input type="number" v-model="dest.fkuser">
-            <input type="number" v-model="dest.fkagence">
-            <input type="text" v-model="dest.country">
-            <input type="text" v-model="dest.city">
-            <input type="text" v-model="dest.days">
+            <input type="number" v-model="dest.fkuser" placeholder="Numéro user">
+            <input type="number" v-model="dest.fkagence" placeholder="Numéro agence">
+            <input type="text" v-model="dest.country" placeholder="Pays">
+            <input type="text" v-model="dest.city" placeholder="Ville">
+            <input type="text" v-model="dest.days" placeholder="Nombre jours">
             <button v-on:click="destAdd">Sauver</button>
         </div>
 
@@ -31,9 +31,9 @@
                     iddestination: 0,
                     fkuser: "",
                     fkagence: "",
-                    country:"country",
-                    city: "city",
-                    days: "days"
+                    country:"",
+                    city: "",
+                    days: ""
 
                 },
                 destlist: [],
